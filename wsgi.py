@@ -1,4 +1,4 @@
-from app import app  # Change to your .py filename, e.g. from app import app
+from app import app  # Make sure this matches your Flask app variable name
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0', port=10000)  # Render requires these settings
