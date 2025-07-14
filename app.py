@@ -98,8 +98,8 @@ def callback():
             "client_id":     CLIENT_ID,
             "client_secret": CLIENT_SECRET,
             "code":          code,
-            "redirect_uri":  REDIRECT_URI,
-            "user_type": "Company"
+            "redirect_uri":  REDIRECT_URI
+            # "user_type": "Company"
         }
         token_resp = requests.post(TOKEN_URL, data=data)
         token_resp.raise_for_status()
